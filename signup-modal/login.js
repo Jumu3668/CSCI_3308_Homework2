@@ -2,16 +2,15 @@ function openModal() {
     /* Note that you do NOT have to do a document.getElementById anywhere in this exercise. Use the elements below */
     var myInput = document.getElementById("psw");
     var confirmMyInput = document.getElementById("cpsw");
-var letter = document.getElementById("letter");
-var capital = document.getElementById("capital");
-var number = document.getElementById("number");
-var length = document.getElementById("length");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
     var match = document.getElementById("match");
 
 
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
-       console.log('helllooo')
 
         /* TODO: Question 1.1: Starts here */
         var lowerCaseLetters = /[a-z]/g; // : Fill in the regular experssion for lowerCaseLetters
@@ -31,8 +30,6 @@ myInput.onkeyup = function() {
          - Each else block stands for a failed condition, so the green check mark needs to be a red cross again.
          - All that you need to do is, in each of the blocks, fill in the correct classNames for the remove and the add methods.
          */
-
-         console.log(letter.classList)
 
         // Validate lowercase letters
         if(myInput.value.match(lowerCaseLetters)) {
